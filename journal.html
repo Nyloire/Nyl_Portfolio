@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body {margin:0;background-color: black; overflow-y: hidden;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: none;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    color: white;
+}
+
+li.right {float: right;}
+
+.entry {padding-top: 100px; padding-left: 20px; padding-right: 20px;}
+</style>
+
+</head>
+<body>
+
+<ul>
+	<li><a class="active" href="main.html">Nyl Aurilon</a></li>
+	<li><a href="main.html">Photography</a></li>
+    <li><a href="journal.html">Journal</a></li>
+	<li><a href="#github">GitHub</a></li>
+	<li><a href="#twitter">Twitter</a></li>
+</ul>
+
+
+<div class="entry" style="vertical-align:top;display:inline-block;height:300px;width:300px">
+    <h2 onclick="Show()" style="color:white">01 <br>January 07 2017</h2>
+    <p id="entry1" style="color:white; display:none;">don't cross bridges your not willing to burn.</p>
+</div>
+
+<div class="entry" style="vertical-align:top;display:inline-block;height:300px;width:300px;">
+    <h1  onclick="Show()" style="color:white">Entry 02</h1>
+    <p id="entry1" style="color:white;display:none;">It’s 1624 in the afternoon in Chicago and I am sitting in a cafe. The sun would be setting right now, but it’s too buried behind clouds to see. It is January 1st of the new year, my first time writing 2017 on a page.</p>
+</div>
+
+<div class="entry" style="vertical-align:top;display:inline-block;height:300px;width:300px">
+    <h2 style="color:white">01 <br>January 07 2017</h2>
+    <p style="color:white">don't cross bridges your not willing to burn.</p>
+</div>
+
+<div class="entry" style="vertical-align:top;display:inline-block;height:300px;width:300px;">
+    <h1 style="color:white">Entry 02</h1>
+    <p style="color:white">It’s 1624 in the afternoon in Chicago and I am sitting in a cafe. The sun would be setting right now, but it’s too buried behind clouds to see. It is January 1st of the new year, my first time writing 2017 on a page.</p>
+</div>
+
+<div class="entry" style="vertical-align:top;display:inline-block;height:300px;width:300px">
+    <h2 style="color:white">01 <br>January 07 2017</h2>
+    <p style="color:white">don't cross bridges your not willing to burn.</p>
+</div>
+
+<div class="entry" style="vertical-align:top;display:inline-block;height:300px;width:300px;">
+    <h1 style="color:white">Entry 02</h1>
+    <p style="color:white">It’s 1624 in the afternoon in Chicago and I am sitting in a cafe. The sun would be setting right now, but it’s too buried behind clouds to see. It is January 1st of the new year, my first time writing 2017 on a page.</p>
+</div>
+
+<div class="entry" style="vertical-align:top;display:inline-block;height:300px;width:300px">
+    <h2 style="color:white">01 <br>January 07 2017</h2>
+    <p style="color:white">don't cross bridges your not willing to burn.</p>
+</div>
+
+<script>
+function Show() {
+	if (document.getElementById("entry1").style.display == "inline-block") {document.getElementById("entry1").style.display = "none"}
+	else if (document.getElementById("entry1").style.display == "none") {document.getElementById("entry1").style.display = "inline-block"}
+}
+</script>
+
+</body>
+</html>
